@@ -40,3 +40,12 @@ echo "touch /tmp/PRUEBA.txt" | at now + 1 minute
 # Luego de un minuto, comprobamos que la carpeta esté limpia:
 
 ls /tmp
+
+
+Tu primer ejemplo (0 23 * * *):
+
+0: Minuto exacto 0.
+
+23: Hora 11 PM (formato 24h).
+
+* * *: Los asteriscos significan "todos", así que es: todos los días, todos los meses, todos los días de la semana.
