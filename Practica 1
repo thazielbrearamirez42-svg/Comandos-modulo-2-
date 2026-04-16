@@ -14,6 +14,8 @@ dnf search bashtop
 
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
+
 */ Instalar la herramienta Bashtop, si se encuentra en los paquetes EPEL;
 
 make uninstall
@@ -58,6 +60,17 @@ sudo rm -f /usr/local/bin/bashtop
 
 sudo find /usr/local -iname 'bashtop'
 
+===========================================
+Si instalas EPEL 9, no necesitas clonar Git ni usar make. Es mucho más limpio:
+
+Bash
+sudo dnf install bashtop -y
+
+
+Instalación de dependencias: Para RHEL 9, antes de clonar, asegúrate de tener Git:
+
+Bash
+sudo dnf install git -y
 */ Eliminamos los archivos residuales encontrados:
 
 sudo rm -rf /usr/local/share/doc/bashtop
